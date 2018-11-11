@@ -1,0 +1,35 @@
+{
+  "name": "pairing-system1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarakoki/pairing-system1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sarakoki/pairing-system1/issues"
+  },
+  "homepage": "https://github.com/Sarakoki/pairing-system1#readme",
+  "dependencies": {
+    "angular": "^1.7.5",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "mongoose": "^5.3.10",
+    "react": "^16.6.1",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.6.1",
+    "react-router-dom": "^4.3.1",
+    "webpack": "^4.25.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
+}

@@ -1,0 +1,42 @@
+
+<div ng-controller="AddCtrl"  Students="$ctrl.Students" added="$ctrl.added">
+  <div class="container-fluied"></div>
+  <h1 style="color: rgb(173, 49, 49); font-size: 50px; position: absolute;">Add Student</h1>
+  <br><br>
+  <br>
+  <form >
+  <input style="height: 50px ;width: 200px; color:rgb(0, 0, 0);float: left; position: absolute; top:140;;
+  left: 50;"
+   placeholder="Add Your Full name" no-model="studentName" >
+   
+  
+  <!-- <select style="height: 50px ;width: 200px; color:rgb(0, 0, 0);position: absolute;top:200; left: 50;">
+    <option disabled selected value> -- select your level -- </option>
+    <option Value="1">1</option>
+    <option Value="2">2</option>
+    <option Value="3">3</option>
+    <option Value="4">4</option>
+    <option Value="5">5</option>
+  </select> -->
+  <button style="height: 50px ;width: 200px; color:rgb(0, 0, 0); border-radius: 20px;position: absolute;top:300; left: 50;"
+    type="submit" ng-click="$ctrl.addStudent(studentName,level)" >save</button>
+    
+  </form>
+    <input style="height: 50px ;width: 200px; color:rgb(0, 0, 0); border-radius: 20px;position: absolute;top:400; left: 50;"
+    type="Submit" value="All students" ng-click="$ctrl.getAllStudents()">
+  <input style="height: 50px ;width: 200px; color:rgb(0, 0, 0); border-radius: 20px;position: absolute;top:500; left: 50;"
+    type="Submit" value="back" ng-click="$ctrl.back()">
+
+    <div style=" color: rgb(34, 41, 41); ">
+      <p  ng-repeat="student in Students " style="color:forestgreen;">
+        <!-- student: {{student.fullName}} level:{{student.level}}  -->
+        <button style="color:rgb(167, 42, 42); border-radius: 20px;"
+        type="Submit" value="delete student" ng-click="$ctrl.deleteStudent(id)">
+     </p>
+        
+     <br />
+      
+    </div>
+</div>
+</div>
+</div>
